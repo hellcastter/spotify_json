@@ -4,14 +4,15 @@ import argparse
 from api import search, get_albums, get_info, get_top_songs, get_related_artists
 
 def main():
+    """ main function """
     parser = argparse.ArgumentParser(
         prog = 'Spotify JSON',
-        description = 'Get info about artist so quickly'
+        description = 'Get info about artist so quickly. Write name and interested parameter.'
     )
 
     parser.add_argument('name', help="Name of artist")
-    parser.add_argument('-a', '--albums', action='store_true', help="Get artists albums")
-    parser.add_argument('-r', '--related', action='store_true', help="Get related artist")
+    parser.add_argument('-a', '--albums', action='store_true', help="Get artist's albums.")
+    parser.add_argument('-r', '--related', action='store_true', help="Get related artist.")
     parser.add_argument('-t', '--top', action='store_true', help="Get top tracks")
     parser.add_argument('-i', '--info', action='store_true', help="Get info about artist")
 

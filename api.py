@@ -1,10 +1,9 @@
+""" help functions """
 import os
 import json
 import base64
 import requests
 from dotenv import load_dotenv
-
-from pprint import pprint
 
 load_dotenv()
 
