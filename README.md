@@ -49,7 +49,7 @@ options:
 ```
 
 ```cmd
-python3 main.py {artist_name} {-i} {-t} {-r} {-a}
+python3 main.py {artist_name} [-i] [-t] [-r] [-a]
 ```
 
 ### Determinate
